@@ -1,7 +1,8 @@
 # Stt_Fsm
-Fsm for Stt
+Fsm for STT
 
-## Important files are in src/main/kotlin
+## Implementation
+Important files are in src/main/kotlin
 Fsm is implemented using separate packaging of code
 
 ## How to run
