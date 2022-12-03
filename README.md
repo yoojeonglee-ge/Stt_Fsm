@@ -1,8 +1,8 @@
 # Stt_Fsm
-Fsm for STT
+Finite State Machine for STT
 
 ## Implementation
-Important files are in src/main/kotlin
+Important files are in src/main/kotlin. 
 Fsm is implemented using separate packaging of code
 
 ## How to run
