@@ -1,8 +1,8 @@
 package Signals
 
 // Change to enum in the future
-val Signal_Idle = 0;
-val Signal_Listening = 1;
-val Signal_Act_1 = 2;
-val Signal_Act_2 = 3;
-val Signal_Act_3 = 4;
+val signalIdle = 0;
+val signalListening = 1;
+val signalAct1 = 2;
+val signalAct2 = 3;
+val signalAct3 = 4;

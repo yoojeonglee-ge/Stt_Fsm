@@ -2,15 +2,15 @@ import Signals.*
 import States.*
 
 fun main(args: Array<String>) {
-    val stt_input = args.joinToString(separator = " ")
-    when (Fsm_State)
+    val sttInput = args.joinToString(separator = " ")
+    when (fsmState)
     {
-        Signal_Idle -> State_Idle(stt_input)
-        Signal_Listening -> State_Listening(stt_input)
-        Signal_Act_1 -> State_Act_1()
-        Signal_Act_2 -> State_Act_2()
-        Signal_Act_3 -> State_Act_3()
-        else -> State_Idle(stt_input)
+        signalIdle -> stateIdle(sttInput)
+        signalListening -> stateListening(sttInput)
+        signalAct1 -> stateAct1()
+        signalAct2 -> stateAct2()
+        signalAct3 -> stateAct3()
+        else -> stateIdle(sttInput)
     }
-    println(Fsm_State)
+    println(fsmState)
 }
