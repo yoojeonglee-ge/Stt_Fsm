@@ -4,11 +4,15 @@ import Signals.*
 
 var Fsm_State = Signal_Idle;
 
+fun StateIs(state: Int)
+{
+    Fsm_State = state;
+}
 fun State_Idle(data: String)
 {
     if("hello edison" == data)
     {
-        Fsm_State = Signal_Listening
+        StateIs(Signal_Listening)
     }
 }
 
@@ -16,10 +20,10 @@ fun State_Listening(data: String)
 {
     when (data)
     {
-        "act one" -> Fsm_State = Signal_Act_1
-        "act two" -> Fsm_State = Signal_Act_2
-        "act three" -> Fsm_State = Signal_Act_3
-        else -> Fsm_State = Signal_Listening
+        "act one" -> StateIs(Signal_Act_1)
+        "act two" -> StateIs(Signal_Act_2)
+        "act three" -> StateIs(Signal_Act_3)
+        else -> StateIs(Signal_Idle)
     }
 }
 
