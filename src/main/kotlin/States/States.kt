@@ -2,6 +2,7 @@ package States
 
 import Signals.*
 
+// This state should be saved externally to avoid constant initialization
 var Fsm_State = Signal_Idle;
 
 fun StateIs(state: Int)
@@ -34,10 +35,10 @@ fun State_Act_1()
 
 fun State_Act_2()
 {
-    // do act 1 function
+    // do act 2 function
 }
 
 fun State_Act_3()
 {
-    // do act 1 function
+    // do act 3 function
 }

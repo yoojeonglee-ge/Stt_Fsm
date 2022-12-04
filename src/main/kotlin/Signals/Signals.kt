@@ -1,6 +1,6 @@
 package Signals
 
-// Change to enum & compartmentalize in the future
+// Change to enum in the future
 val Signal_Idle = 0;
 val Signal_Listening = 1;
 val Signal_Act_1 = 2;
